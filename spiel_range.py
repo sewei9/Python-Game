@@ -24,5 +24,5 @@ for versuche in range(1,10):
         print(zahl, "ist falsch")
 
 # Anzahl ausgeben
-print("Ergebnis: ", c)
+print("Ergebnis:", c)
 print("Anzahl Versuche:", versuche)
