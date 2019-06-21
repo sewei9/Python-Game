@@ -26,3 +26,4 @@ else:
 
 #Ende
 print("Ergebnis: ", c)    
+print("Ergebnis:", c)
