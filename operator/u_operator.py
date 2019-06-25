@@ -22,8 +22,3 @@ if v == "Ja" and zahl <= 4000:
     print ("Ihre Steuerabgaben belaufen sich auf:", steuern4)
 elif v == "Nein" and  zahl <= 4000:
         print ("Ihre Steuerabgaben belaufen sich auf:", steuern3)
-
-
-            
-    
-
