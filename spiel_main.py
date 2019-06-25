@@ -1,23 +1,23 @@
-# 1: Zufallsgenerator
+# 1: Initialisierung des Zufallsgenerator
 import random
-random.seed()
+random.seed()   # Zufallsgenerator wird mit aktueller Systemzeit synchronisiert um die gleichen Zahlen zu vermeiden
 
-# 2: Anzahl Aufgaben
+# 2: Gewünschte Anzahl an Aufgaben
 anzahl = -1
 while anzahl<0 or anzahl>10:
-    try:
-        print("Wie viele Aufgaben (1 bis 10):")
-        anzahl = int(input())
+    try:                                          #Fehler bei der Eingabe durch Benutzer wird durch try & except aufgefangen  
+        print("Wie viele Aufgaben (1 bis 10):")     
+        anzahl = int(input())                       
     except:
         continue
 
 # 3: Anzahl richtige Ergebnisse
 richtig = 0
 
-# 4: Schleife mit "anzahl Aufgaben
+# 4: Schleife mit "anzahl" Aufgaben
 for aufgabe in range(1,anzahl+1):
 
-    # 5: Operatorauswahl
+    # 5: Operatorauswahl wird Zufällig ermittelt
     opzahl = random.randint(1,4)
 
     # 6: Operandenauswahl
@@ -55,7 +55,7 @@ for aufgabe in range(1,anzahl+1):
         except:
             # Falls Umwandlung nicht erfolgreich
             print("Sie haben keine Zahl eingegeben")
-            # SChleife unmittelbar fortsetzen
+            # Schleife unmittelbar fortsetzen
             continue
 
         # 11: Kommentar
