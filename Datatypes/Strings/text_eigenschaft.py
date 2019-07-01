@@ -4,7 +4,7 @@ t3 = """Diese Zeichenkette
         steht in
         mehreren Zeilen"""
 t4 = 'Hier sind "doppelte Hochkommata" gespeichert'
-print("Bitte geben SIe einen Text ein")
+print("Bitte geben Sie einen Text ein")
 t5 = input()
 
 print("t1:", t1)
