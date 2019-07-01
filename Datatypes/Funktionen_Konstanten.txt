@@ -1,0 +1,9 @@
+sqrt() : Berechnung der Quadratwurzel
+log(), log10(): Logarithmen zur Basis e und Basis 10
+exp(): Berechnung von e^x gibt es die Konstanten pi und e. --> Stehen für unveränderbare Werte
+factorial(): Fakultät darf nur mit positiven ganzen Zahlen berechnet werden.
+
+gcd(): Größter gemeinsamer Teiler (GGT, engl.: greatest common divisor)
+
+isclose(): Sind zwei Zahlen nahe zueinander (1% Abweichung)
+rel_tol, abs_tol: Messung der absoluten Toleranz
