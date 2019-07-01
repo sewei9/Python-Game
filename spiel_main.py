@@ -4,10 +4,10 @@ random.seed()   # Zufallsgenerator wird mit aktueller Systemzeit synchronisiert 
 
 # 2: Gewünschte Anzahl an Aufgaben
 anzahl = -1
-while anzahl<0 or anzahl>10:
-    try:                                          #Fehler bei der Eingabe durch Benutzer wird durch try & except aufgefangen  
-        print("Wie viele Aufgaben (1 bis 10):")     
-        anzahl = int(input())                       
+while anzahl < 0 or anzahl > 10:
+    try:  # Fehler bei der Eingabe durch Benutzer wird durch try & except aufgefangen
+        print("Wie viele Aufgaben (1 bis 10):")
+        anzahl = int(input())
     except:
         continue
 
@@ -15,31 +15,31 @@ while anzahl<0 or anzahl>10:
 richtig = 0
 
 # 4: Schleife mit "anzahl" Aufgaben
-for aufgabe in range(1,anzahl+1):
+for aufgabe in range(1, anzahl+1):
 
     # 5: Operatorauswahl wird Zufällig ermittelt
-    opzahl = random.randint(1,4)
+    opzahl = random.randint(1, 4)
 
     # 6: Operandenauswahl
     if(opzahl == 1):
-        a = random.randint(-10,30)
-        b = random.randint(-10,30)
+        a = random.randint(-10, 30)
+        b = random.randint(-10, 30)
         op = "+"
         c = a + b
     elif(opzahl == 2):
-        a = random.randint(1,30)
-        b = random.randint(1,30)
+        a = random.randint(1, 30)
+        b = random.randint(1, 30)
         op = "-"
         c = a - b
     elif(opzahl == 3):
-        a = random.randint(1,10)
-        b = random.randint(1,10)
+        a = random.randint(1, 10)
+        b = random.randint(1, 10)
         op = "*"
         c = a * b
     # 7: Sonderfall Division
     elif(opzahl == 4):
-        a = random.randint(1,10)
-        b = random.randint(1,10)
+        a = random.randint(1, 10)
+        b = random.randint(1, 10)
         op = "/"
         c = a / b
 
@@ -47,7 +47,7 @@ for aufgabe in range(1,anzahl+1):
     print("Aufgabe", aufgabe, "von", anzahl, ":", a, op, b)
 
     # 9: Schleife mit drei Versuchen
-    for versuch in range(1,4):
+    for versuch in range(1, 4):
         # 10: EIngabe
         try:
             print("Bitte eine Zahl eingeben:")
