@@ -2,7 +2,7 @@
 import random
 random.seed()   # Zufallsgenerator wird mit aktueller Systemzeit synchronisiert um die gleichen Zahlen zu vermeiden
 
-# 2: Gewünschte Anzahl an Aufgaben
+# 2: Gewuenschte Anzahl an Aufgaben
 anzahl = -1
 while anzahl < 0 or anzahl > 10:
     try:  # Fehler bei der Eingabe durch Benutzer wird durch try & except aufgefangen
@@ -17,7 +17,7 @@ richtig = 0
 # 4: Schleife mit "anzahl" Aufgaben
 for aufgabe in range(1, anzahl+1):
 
-    # 5: Operatorauswahl wird Zufällig ermittelt
+    # 5: Operatorauswahl wird Zufaellig ermittelt
     opzahl = random.randint(1, 4)
 
     # 6: Operandenauswahl

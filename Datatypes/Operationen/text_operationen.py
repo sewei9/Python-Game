@@ -23,5 +23,6 @@ ts = tname[9:-3]
 print("[9:-3]:", ts)
 
 # Elemente einzeln
-for zeichen in tname[5:8]: # Kann hier genutzt werden um eine ganze Zeichenkette oder einen Teil der Zeichenkette Zeichen für Zeichen durchzugehen
+#
+for zeichen in tname[5:8]:
     print(zeichen)
