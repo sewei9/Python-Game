@@ -7,7 +7,7 @@ fr[2] = "Lens"
 print("Element ersetzt:", fr)
 
 # Ersetzen eines Teilbereichs durch eine Liste
-fr[1:2]= ["Nacy", "Metz"]
+fr[1:2] = ["Nacy", "Metz"]
 print("Teil ersetzt:", fr)
 
 # Entnehmen eines Teilbereiches
