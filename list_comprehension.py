@@ -40,6 +40,6 @@ print(cliste)
 
 # Beispiel 3: Version MIT List Comprehension
 cliste = [xliste[i] * 10 + yliste[i]                   # [
-for i in range(len(xliste))
-        if xliste[i] < 10 and yliste[i] < 10]          # ]
+          for i in range(len(xliste))
+          if xliste[i] < 10 and yliste[i] < 10]          # ]
 print(cliste)
