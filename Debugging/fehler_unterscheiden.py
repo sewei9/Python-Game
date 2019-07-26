@@ -9,9 +9,9 @@ while fehler:
             raise RuntimeError("Zahl zu klein")
         kw = 1.0 / zahl
         fehler = False
-    except ValueError:                              
+    except ValueError:
         print("Fehler: keine Zahl")
-    except ZeroDivisionError:                       
+    except ZeroDivisionError:
         print("Fehler: Zahl 0 eingegeben")
     except RuntimeError as e:
         print("Fehler:", e)
