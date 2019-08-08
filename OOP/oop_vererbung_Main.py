@@ -13,6 +13,7 @@ class Fahrzeug:
         return self.bezeichnung + " " \
             + str(self.geschwindigkeit) + " km/h"
 
+
 # Definition der Klasse PKW
 
 
