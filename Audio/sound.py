@@ -2,7 +2,7 @@ import winsound
 import time
 
 # FOlge von Tönen mit unterschiedlichen Frewquenz
-for i in range ( 600, 1500, 200):
+for i in range (600, 1500, 200):
     print(i)
     winsound.Beep(i, 500)
     time.sleep(0.2)
